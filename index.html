@@ -87,10 +87,14 @@
 
     h1 {
       margin: 0;
-      max-width: 780px;
+      max-width: 900px;
       font-size: clamp(42px, 7vw, 76px);
       line-height: 1.08;
       letter-spacing: 0;
+    }
+
+    h1 span {
+      display: block;
     }
 
     .lead {
@@ -141,6 +145,12 @@
         flex-direction: column;
       }
 
+      h1 {
+        max-width: 360px;
+        font-size: 40px;
+        line-height: 1.16;
+      }
+
       .grid {
         grid-template-columns: 1fr;
       }
@@ -160,7 +170,10 @@
 
   <main class="shell">
     <p class="eyebrow">Harmony of Stars</p>
-    <h1>감정을 별빛으로 남기고 시간이 지난 뒤 다시 읽어보세요.</h1>
+    <h1>
+      <span>감정을 별빛으로 남기고</span>
+      <span>시간이 지난 뒤 다시 읽어보세요.</span>
+    </h1>
     <p class="lead">
       별의 하모니는 하루의 감정을 조용한 별처럼 기록하고, 캘린더와 히스토리,
       위젯으로 감정의 흐름을 다시 바라보게 돕는 개인 기록 앱입니다.
