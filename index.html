@@ -3,12 +3,187 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>YuSeongChoi GitHub Pages</title>
+  <title>별의 하모니 - Harmony of Stars</title>
+  <meta
+    name="description"
+    content="별의 하모니는 하루의 감정을 별빛처럼 기록하고, 시간이 지난 뒤 감정의 흐름을 다시 읽게 도와주는 iOS 앱입니다."
+  >
+  <style>
+    :root {
+      color-scheme: dark;
+      --bg: #050814;
+      --panel: rgba(255, 255, 255, 0.08);
+      --line: rgba(255, 255, 255, 0.14);
+      --text: #f7f8ff;
+      --muted: rgba(236, 239, 255, 0.74);
+      --accent: #ffd98d;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      color: var(--text);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background:
+        radial-gradient(circle at 78% 8%, rgba(139, 209, 255, 0.2), transparent 24%),
+        radial-gradient(circle at 12% 22%, rgba(255, 217, 141, 0.16), transparent 22%),
+        linear-gradient(180deg, var(--bg) 0%, #0a1023 56%, #17132c 100%);
+    }
+
+    a {
+      color: inherit;
+    }
+
+    .shell {
+      width: min(1040px, calc(100vw - 40px));
+      margin: 0 auto;
+    }
+
+    header {
+      padding: 28px 0 18px;
+    }
+
+    nav {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      padding: 16px 20px;
+      border: 1px solid var(--line);
+      border-radius: 18px;
+      background: rgba(6, 10, 24, 0.72);
+      backdrop-filter: blur(14px);
+    }
+
+    .brand {
+      color: var(--accent);
+      font-weight: 700;
+      text-decoration: none;
+    }
+
+    .links {
+      display: flex;
+      gap: 14px;
+      flex-wrap: wrap;
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    main {
+      padding: 46px 0 72px;
+    }
+
+    .eyebrow {
+      margin: 0 0 14px;
+      color: var(--accent);
+      font-size: 14px;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+    }
+
+    h1 {
+      margin: 0;
+      max-width: 780px;
+      font-size: clamp(42px, 7vw, 76px);
+      line-height: 1.08;
+      letter-spacing: 0;
+    }
+
+    .lead {
+      margin: 22px 0 0;
+      max-width: 740px;
+      color: var(--muted);
+      font-size: clamp(17px, 2vw, 22px);
+      line-height: 1.7;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 18px;
+      margin-top: 42px;
+    }
+
+    .card {
+      min-height: 174px;
+      padding: 24px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: var(--panel);
+    }
+
+    .card h2 {
+      margin: 0 0 12px;
+      font-size: 22px;
+      line-height: 1.35;
+      letter-spacing: 0;
+    }
+
+    .card p {
+      margin: 0;
+      color: var(--muted);
+      line-height: 1.75;
+    }
+
+    footer {
+      padding: 0 0 28px;
+      color: rgba(236, 239, 255, 0.58);
+      font-size: 14px;
+    }
+
+    @media (max-width: 720px) {
+      nav {
+        align-items: flex-start;
+        flex-direction: column;
+      }
+
+      .grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
 </head>
 <body>
-  <main>
-    <h1>YuSeongChoi GitHub Pages</h1>
-    <p>This root site hosts app-ads.txt for published apps.</p>
+  <header class="shell">
+    <nav>
+      <a class="brand" href="/">별의 하모니</a>
+      <div class="links">
+        <a href="https://velog.io/@yuseongchoi">Support</a>
+        <a href="/app-ads.txt">app-ads.txt</a>
+      </div>
+    </nav>
+  </header>
+
+  <main class="shell">
+    <p class="eyebrow">Harmony of Stars</p>
+    <h1>감정을 별빛으로 남기고 시간이 지난 뒤 다시 읽어보세요.</h1>
+    <p class="lead">
+      별의 하모니는 하루의 감정을 조용한 별처럼 기록하고, 캘린더와 히스토리,
+      위젯으로 감정의 흐름을 다시 바라보게 돕는 개인 기록 앱입니다.
+    </p>
+
+    <section class="grid" aria-label="주요 기능">
+      <article class="card">
+        <h2>별자리처럼 쌓이는 기록</h2>
+        <p>하루의 감정을 짧고 가볍게 남기면 메인 화면의 밤하늘에 별처럼 쌓입니다.</p>
+      </article>
+      <article class="card">
+        <h2>날짜별 탐색</h2>
+        <p>캘린더로 원하는 날짜를 빠르게 찾고, 그날의 감정과 기록을 다시 읽을 수 있습니다.</p>
+      </article>
+      <article class="card">
+        <h2>흐름 확인</h2>
+        <p>히스토리와 위젯을 통해 최근 감정 패턴을 한눈에 확인할 수 있습니다.</p>
+      </article>
+    </section>
   </main>
+
+  <footer class="shell">
+    Copyright 2026 YuSeongChoi. All rights reserved.
+  </footer>
 </body>
 </html>
