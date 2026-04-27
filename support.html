@@ -3,10 +3,10 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>별의 하모니 - Harmony of Stars</title>
+  <title>별의 하모니 지원</title>
   <meta
     name="description"
-    content="별의 하모니는 하루의 감정을 별빛처럼 기록하고, 시간이 지난 뒤 감정의 흐름을 다시 읽게 도와주는 iOS 앱입니다."
+    content="별의 하모니 앱 지원, 문의, 피드백 안내 페이지입니다."
   >
   <style>
     :root {
@@ -39,7 +39,7 @@
     }
 
     .shell {
-      width: min(1040px, calc(100vw - 40px));
+      width: min(880px, calc(100vw - 40px));
       margin: 0 auto;
     }
 
@@ -87,29 +87,26 @@
 
     h1 {
       margin: 0;
-      max-width: 780px;
-      font-size: clamp(42px, 7vw, 76px);
+      font-size: clamp(38px, 7vw, 68px);
       line-height: 1.08;
       letter-spacing: 0;
     }
 
     .lead {
-      margin: 22px 0 0;
-      max-width: 740px;
+      margin: 20px 0 0;
+      max-width: 720px;
       color: var(--muted);
-      font-size: clamp(17px, 2vw, 22px);
+      font-size: clamp(17px, 2vw, 21px);
       line-height: 1.7;
     }
 
-    .grid {
+    .stack {
       display: grid;
-      grid-template-columns: repeat(3, minmax(0, 1fr));
       gap: 18px;
-      margin-top: 42px;
+      margin-top: 38px;
     }
 
     .card {
-      min-height: 174px;
       padding: 24px;
       border: 1px solid var(--line);
       border-radius: 8px;
@@ -123,10 +120,19 @@
       letter-spacing: 0;
     }
 
-    .card p {
-      margin: 0;
+    .card p,
+    .card li {
       color: var(--muted);
       line-height: 1.75;
+    }
+
+    .card p {
+      margin: 0;
+    }
+
+    ul {
+      margin: 0;
+      padding-left: 20px;
     }
 
     footer {
@@ -140,10 +146,6 @@
         align-items: flex-start;
         flex-direction: column;
       }
-
-      .grid {
-        grid-template-columns: 1fr;
-      }
     }
   </style>
 </head>
@@ -152,32 +154,45 @@
     <nav>
       <a class="brand" href="/">별의 하모니</a>
       <div class="links">
-        <a href="/support.html">Support</a>
+        <a href="/">Marketing</a>
         <a href="/app-ads.txt">app-ads.txt</a>
       </div>
     </nav>
   </header>
 
   <main class="shell">
-    <p class="eyebrow">Harmony of Stars</p>
-    <h1>감정을 별빛으로 남기고 시간이 지난 뒤 다시 읽어보세요.</h1>
+    <p class="eyebrow">Support</p>
+    <h1>별의 하모니 지원</h1>
     <p class="lead">
-      별의 하모니는 하루의 감정을 조용한 별처럼 기록하고, 캘린더와 히스토리,
-      위젯으로 감정의 흐름을 다시 바라보게 돕는 개인 기록 앱입니다.
+      앱 사용 중 문제가 있거나 개선 의견이 있다면 아래 연락처로 문의해 주세요.
+      가능한 한 빠르게 확인하겠습니다.
     </p>
 
-    <section class="grid" aria-label="주요 기능">
+    <section class="stack" aria-label="지원 정보">
       <article class="card">
-        <h2>별자리처럼 쌓이는 기록</h2>
-        <p>하루의 감정을 짧고 가볍게 남기면 메인 화면의 밤하늘에 별처럼 쌓입니다.</p>
+        <h2>문의</h2>
+        <p>
+          이메일:
+          <a href="mailto:yuseongchoi.dev@gmail.com">yuseongchoi.dev@gmail.com</a>
+        </p>
       </article>
+
       <article class="card">
-        <h2>날짜별 탐색</h2>
-        <p>캘린더로 원하는 날짜를 빠르게 찾고, 그날의 감정과 기록을 다시 읽을 수 있습니다.</p>
+        <h2>문의할 때 포함하면 좋은 정보</h2>
+        <ul>
+          <li>사용 중인 기기 모델과 iOS 버전</li>
+          <li>앱 버전</li>
+          <li>문제가 발생한 화면 또는 상황</li>
+          <li>가능하다면 재현 방법</li>
+        </ul>
       </article>
+
       <article class="card">
-        <h2>흐름 확인</h2>
-        <p>히스토리와 위젯을 통해 최근 감정 패턴을 한눈에 확인할 수 있습니다.</p>
+        <h2>앱 정보</h2>
+        <p>
+          별의 하모니는 하루의 감정을 별빛처럼 기록하고 캘린더, 히스토리,
+          위젯으로 감정의 흐름을 다시 확인할 수 있는 개인 기록 앱입니다.
+        </p>
       </article>
     </section>
   </main>
